@@ -6,3 +6,4 @@ pandas
 simplejson
 numpy
 sklearn
+scipy

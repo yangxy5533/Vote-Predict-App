@@ -4,16 +4,16 @@ import requests
 import pandas as pd
 import numpy as np
 from sklearn.externals import joblib
-import data_check
+import data_help
 import plot_hover_bokeh
 
 
 
 def load_survey_data(filename):
     df = pd.read_table(filename,delimiter=',')
-    voteDR_2016, voteDR_2012, voteDR_2008 = data_check.get_cols_voteDR_2016_2012_2008(df)
-    voteDR_12to16=data_check.get_cols_voteDR_convey(voteDR_2016,voteDR_2012)
-    voteDR_08to12=data_check.get_cols_voteDR_convey(voteDR_2012,voteDR_2008)
+    voteDR_2016, voteDR_2012, voteDR_2008 = data_help.get_cols_voteDR_2016_2012_2008(df)
+    voteDR_12to16=data_help.get_cols_voteDR_convey(voteDR_2016,voteDR_2012)
+    voteDR_08to12=data_help.get_cols_voteDR_convey(voteDR_2012,voteDR_2008)
     df1=df[['case_identifier']]
     df1['voteDR_2016'], df1['voteDR_2012'], df1['voteDR_2008']= [voteDR_2016, voteDR_2012, voteDR_2008]
     df1['voteDR_12to16'],df1['voteDR_08to12'] = [voteDR_12to16, voteDR_08to12]
@@ -77,7 +77,7 @@ def surveyData_prob(the_app):
     sel = list(the_app.loadData.columns)
     df2 = df[sel]
     df2 = df2.dropna()
-    df2=data_check.make_dummy(df2, sel)
+    df2=data_help.make_dummy(df2, sel)
 
     df_data = pd.DataFrame(est.predict_proba(df2),index=df2.index, columns=['proba0','proba1'])
     df_data['predict']=est.predict(df2)
@@ -149,6 +149,6 @@ def pred_result():
 
 if __name__ == '__main__':
     port = int(os.environ.get('port', 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
-    #app.run(host='0.0.0.0', port=port, debug=False)
+    #app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(host='0.0.0.0', port=port, debug=False)
  

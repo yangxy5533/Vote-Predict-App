@@ -1,4 +1,4 @@
-import data_check
+import data_help
 from bokeh.plotting import figure, output_file, show, ColumnDataSource
 from bokeh.models import HoverTool
 from bokeh.embed import components
@@ -40,9 +40,9 @@ def plot_D_R_dist_by_feature(df, df1, sel):
 
 if __name__=='__main__':
     df = pd.read_table('data/VOTER_Survey_December16_Release1.csv',delimiter=',')
-    voteDR_2016, voteDR_2012, voteDR_2008 = data_check.get_cols_voteDR_2016_2012_2008(df)
-    voteDR_12to16=data_check.get_cols_voteDR_convey(voteDR_2016,voteDR_2012)
-    voteDR_08to12=data_check.get_cols_voteDR_convey(voteDR_2012,voteDR_2008)
+    voteDR_2016, voteDR_2012, voteDR_2008 = data_help.get_cols_voteDR_2016_2012_2008(df)
+    voteDR_12to16=data_help.get_cols_voteDR_convey(voteDR_2016,voteDR_2012)
+    voteDR_08to12=data_help.get_cols_voteDR_convey(voteDR_2012,voteDR_2008)
     df1=df[['case_identifier']]
     df1['voteDR_2016'], df1['voteDR_2012'], df1['voteDR_2008']= [voteDR_2016, voteDR_2012, voteDR_2008]
     df1['voteDR_12to16'],df1['voteDR_08to12'] = [voteDR_12to16, voteDR_08to12]
