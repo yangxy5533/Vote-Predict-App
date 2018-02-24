@@ -1,0 +1,8 @@
+gunicorn
+requests
+flask
+bokeh==0.12.7
+pandas
+simplejson
+numpy
+sklearn

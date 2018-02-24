@@ -1,0 +1,32 @@
+item,value
+intercept,-0.08408491
+obamaapp_2016_Don't know,-0.1048
+obamaapp_2016_Somewhat Approve,-1.1576
+obamaapp_2016_Somewhat Disapprove,0.8655
+obamaapp_2016_Strongly Approve,-2.0898
+obamaapp_2016_Strongly Disapprove,2.4025
+immi_contribution_2016_Don't know,0.0065
+immi_contribution_2016_Mostly a drain,0.7821
+immi_contribution_2016_Mostly make a contribution,-0.7235
+immi_contribution_2016_Neither,-0.1491
+race_slave_2016_Agree,0.0122
+race_slave_2016_Disagree,0.2808
+race_slave_2016_Don't Know,-0.3790
+race_slave_2016_Strongly Agree,-0.4890
+race_slave_2016_Strongly Disagree,0.4910
+imiss_g_2016_Not very important,0.0007
+imiss_g_2016_Somewhat important,-0.1994
+imiss_g_2016_Unimportant,0.6168
+imiss_g_2016_Very important,-0.5022
+univhealthcov_2016_Don't know,0.1715
+univhealthcov_2016_No,0.2560
+univhealthcov_2016_Yes,-0.5116
+healthreformbill_2016_Don't know,-0.0378
+healthreformbill_2016_Expanded,-0.8813
+healthreformbill_2016_Kept the same,-0.3172
+healthreformbill_2016_Repealed,1.1522
+envwarm_2016_Definitely is happening,-1.1063
+envwarm_2016_Definitely is not happening,0.6360
+envwarm_2016_Don't know,-0.3994
+envwarm_2016_Probably is happening,-0.0974
+envwarm_2016_Probably is not happening,0.8830

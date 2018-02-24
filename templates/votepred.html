@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+  body {
+    padding-top: 70px;
+  }
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+<!-- navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <span class="navbar-brand">Vote Predict App</span>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-1">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/thedataincubator/flask-framework">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.voterstudygroup.org/publications/2016-elections/data">Data Source</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  
+  <form id='select' method='post' action=''>
+  <div>
+    <p>(1) Do you approve or disapprove of the way Barack Obama is handling his job as President?</p>
+    <select name="obamaapp_2016">
+      <option disabled selected value>select</option>
+      <option value="Strongly Approve">Strongly Approve</option>
+      <option value="Somewhat Approve">Somewhat Approve</option>
+      <option value="Somewhat Disapprove">Somewhat Disapprove</option>
+      <option value="Strongly Disapprove">Strongly Disapprove</option>
+      <option value="Don't know">Don't know</option>
+    </select>
+    <p><br /></p>
+    <p>(2) Overall, do you think illegal immigrants American society or are a drain?</p>
+    <select name="immi_contribution_2016">
+      <option disabled selected value>select</option>
+      <option value="Mostly make a contribution">Mostly make a contribution</option>
+      <option value="Neither">Neither</option>
+      <option value="Mostly a drain">Mostly a drain</option>
+      <option value="Don't know">Don't know</option>
+    </select>
+    <p><br /></p>
+    <p>(3) Generations of slavery and discrimination have created conditions that make it difficult for blacks to work their way out of the lower class</P>
+    <select name="race_slave_2016">
+      <option disabled selected value>select</option>
+      <option value="Strongly Agree">Strongly Agree</option>
+      <option value="Agree">Agree</option>
+      <option value="Disagree">Disagree</option>
+      <option value="Strongly Disagree">Strongly Disagree</option>
+      <option value="Don't Know">Don't Know</option>
+    </select>
+    <p><br /></p>
+    <p>(4) How important is the issue of gay rights to you?</p>
+    <select name="imiss_g_2016">
+      <option disabled selected value>select</option>
+      <option value="Very important">Very important</option>
+      <option value="Somewhat important">Somewhat important</option>
+      <option value="Not very important">Not very important</option>
+      <option value="Unimportant">Unimportant</option>
+    </select>
+    <p><br /></p>
+    <p>(5) Do you think it is the responsibility of the federal government to see to it that everyone has health care coverage?</p>
+    <select name="univhealthcov_2016">
+      <option disabled selected value>select</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+      <option value="Don't know">Don't know</option>
+    </select>
+    <p><br /></p>
+    <p>(6) Do you think the health care reform bill should be expanded, kept the same, or repealed?</p>
+    <select name="healthreformbill_2016">
+      <option disabled selected value>select</option>
+      <option value="Expanded">Expanded</option>
+      <option value="Kept the same">Kept the same</option>
+      <option value="Repealed">Repealed</option>
+      <option value="Don't know">Don't know</option>
+    </select>
+    <p><br /></p>
+    <p>(7) Some people say that global temperatures have been going up slowly over the past 100 years - the phenomenon called "global warming." Do you think that global warming is happening?</p>
+    <select name="envwarm_2016">
+      <option disabled selected value>select</option>
+      <option value="Definitely is happening">Definitely is happening</option>
+      <option value="Probably is happening">Probably is happening</option>
+      <option value="Probably is not happening">Probably is not happening</option>
+      <option value="Definitely is not happening">Definitely is not happening</option>
+      <option value="Don't know">Don't know</option>
+    </select>
+
+    <p><input type="submit" value="Add"></p>
+    </div>
+  </form>
+  <form action="pred_result.html">
+    <input type="submit" value="Submit" />
+  </form>
+
+</body>
+</html>
