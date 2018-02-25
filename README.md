@@ -27,4 +27,4 @@ And the [learning curve (accuracy)](images/DR_lc.png)
 
 ## Distribution by Features
 
-This plots the counts of Republican vs Democratic voters in each category of selected features. It is to help finding interesting features that distinguish Republican and Democratic voters. For selected features, a plot is generated, each feature is shown in one color, and each circle corresponds to one category within that feature. Features of which the data points fall close to x/y axis can help to distinguish between Republican and Democratic voters and features of which the data points align along the 45° line are not interesting.
+This plots the counts of Republican vs Democratic voters in each category of selected features. It is to help finding interesting features that distinguish Republican and Democratic voters. For selected features, a plot is generated, each feature is shown in one color, and each circle corresponds to one category within that feature. Features of which the data points fall close to x/y axis can help to distinguish between Republican and Democratic voters, and features of which the data points align along the 45° line are not interesting.
